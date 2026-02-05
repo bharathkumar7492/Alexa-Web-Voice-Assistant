@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alexa Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎙️ Alexa Voice Assistant</h1>
+
+    <form action="/listen" method="post">
+        <button type="submit" class="btn">🎧 Listen</button>
+    </form>
+
+    <div class="card">
+        <h3>You said:</h3>
+        <p>{{ command }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Alexa says:</h3>
+        <p id="response">{{ response }}</p>
+    </div>
+
+</div>
+
+
+
+<script>
+
+let spoken = false;
+
+speechSynthesis.onvoiceschanged = function () {
+    if (spoken) return;   // prevent double speak
+    spoken = true;
+
+    const text = document.getElementById("response").innerText;
+    if (!text) return;
+
+    const voices = speechSynthesis.getVoices();
+    const msg = new SpeechSynthesisUtterance(text);
+
+    msg.rate = 0.85;                            // speaking speed
+
+    for (let i = 0; i < voices.length; i++) {
+        if (
+            voices[i].name.includes("Zira") ||   // Windows female
+            voices[i].gender === "female"
+        ) {
+            msg.voice = voices[i];
+            break;
+        }
+    }
+
+    speechSynthesis.cancel();
+    speechSynthesis.speak(msg);
+};
+</script>
+
+
+</body>
+</html>
+
