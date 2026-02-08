@@ -1,12 +1,12 @@
-# Alexa-Web-Voice-Assistant
+# 🎙️ Alexa Web Voice Assistant (Python + Flask)
 
-#🎙️ Alexa Web Voice Assistant (Python + Flask)
+## 📌 Project Overview
 
 A web-based voice assistant built using Python and Flask that listens to user commands and responds with speech in real time. The assistant can play songs, fetch information from Wikipedia, tell jokes, and provide time/date updates through voice interaction.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#🚀 Features
+## 🚀 Features
 
 🎧 Voice command recognition using SpeechRecognition
 
@@ -28,38 +28,40 @@ A web-based voice assistant built using Python and Flask that listens to user co
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-#🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Backend - 
+### Backend - 
 
-Python
-Flask
+- Python
 
-
-Voice Processing - 
-
-SpeechRecognition (Google Web Speech API)
-pyttsx3
+- Flask
 
 
-Frontend - 
+### Voice Processing - 
 
-HTML
-CSS
-JavaScript (Speech Synthesis)
+- SpeechRecognition (Google Web Speech API)
+  
+- pyttsx3
 
 
-Libraries Used - 
-pywhatkit
-wikipedia
-pyjokes
-datetime
+### Frontend - 
+
+- HTML
+- CSS
+- JavaScript (Speech Synthesis)
+
+
+### Libraries Used - 
+- pywhatkit
+- wikipedia
+- pyjokes
+- datetime
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-#⚙️ How It Works
+## ⚙️ How It Works
 
 
 1. User clicks the Listen button on the webpage
@@ -82,7 +84,7 @@ datetime
 
 
 
-#💻 Installation & Setup
+## 💻 Installation & Setup
 
 
 1️⃣ Clone the Repository
@@ -102,42 +104,42 @@ http://127.0.0.1:5000
 
 
 
-#🧠 Supported Voice Commands
+## 🧠 Supported Voice Commands
 
 
-Try saying:
+### Try saying:
 
-“Alexa play song name”
+- “Alexa play song name”
 
-“Alexa what is Python”
+- “Alexa what is Python”
 
-“Alexa tell me a joke”
+- “Alexa tell me a joke”
 
-“Alexa time”
+- “Alexa time”
 
-“Alexa date”
+- “Alexa date”
 
-“Alexa how are you”
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-#✖️ Error Handling
-
-The system handles:
-
-Unclear voice input
-
-API request failures
-
-Wikipedia ambiguity errors
-
-Empty command detection
+- “Alexa how are you”
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-#👨‍💻 Author
+## ✖️ Error Handling
+
+### The system handles:
+
+- Unclear voice input
+
+- API request failures
+
+- Wikipedia ambiguity errors
+
+- Empty command detection
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## 👨‍💻 Author
 
 BharathKumar Ravi
 
