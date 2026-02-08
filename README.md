@@ -88,17 +88,17 @@ A web-based voice assistant built using Python and Flask that listens to user co
 
 
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/alexa-web-voice-assistant.git
-cd alexa-web-voice-assistant
+`git clone https://github.com/your-username/alexa-web-voice-assistant.git`
+`cd alexa-web-voice-assistant`
 
 2️⃣ Install Dependencies
-pip install flask SpeechRecognition pyttsx3 pywhatkit wikipedia pyjokes
+`pip install flask SpeechRecognition pyttsx3 pywhatkit wikipedia pyjokes`
 
 3️⃣ Run the Application
-python app.py
+`python app.py`
 
 4️⃣ Open in Browser
-http://127.0.0.1:5000
+`http://127.0.0.1:5000`
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
